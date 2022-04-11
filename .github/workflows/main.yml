@@ -1,0 +1,25 @@
+name: Publish
+
+'on': workflow_dispatch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: Build
+        uses: actions/setup-node@v1
+        with:
+          node-version: 17
+      - run: npm i && npm run build
+      
+      - name: Deploy to GitHub Pages
+        uses: Cecilapp/GitHub-Pages-deploy@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          email: github-actions[bot]@users.noreply.github.com
+          build_dir: dist
+          cname: trilogika.com.br
