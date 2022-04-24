@@ -8,3 +8,35 @@
     scroll-behavior: smooth;
   }
 }
+
+.section-title {
+  @apply text-3xl lg:text-5xl mb-2 lg:mb-4;
+}
+
+.section-subtitle {
+  @apply text-2xl lg:text-4xl font-light;
+}
+
+.text-muted {
+  @apply text-slate-600;
+}
+
+.faq-card {
+  @apply bg-slate-900 rounded-xl p-4 flex flex-col md:max-w-[350px] shadow-lg;
+}
+
+.faq-card-header {
+  @apply flex mb-2 items-center;
+}
+
+.faq-card-avatar {
+  @apply h-12 w-12 rounded-full mr-4;
+}
+
+.faq-card-title {
+  @apply text-lg text-white;
+}
+
+.faq-card-text {
+  @apply text-slate-400;
+}
