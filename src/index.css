@@ -9,12 +9,44 @@
   }
 }
 
+.container {
+  @apply px-4 lg:px-0;
+}
+
+.gray-reveal {
+  @apply grayscale hover:grayscale-0 hover:-translate-y-1 hover:translate-x-1 hover:scale-110 transform-gpu transition-all duration-500;
+}
+
+.circle-icon-gradient {
+  @apply h-20 w-20 text-4xl rounded-full flex items-center content-center justify-center bg-gradient-to-br from-brand-500 to-indigo-600;
+}
+
+.brand-gradient {
+  @apply bg-gradient-to-br from-brand-500 to-indigo-600;
+}
+
+.link {
+  @apply text-black hover:text-brand-500;
+}
+
+.btn {
+  @apply rounded-lg cursor-pointer font-semibold px-5 py-2.5 ease-in-out duration-300;
+}
+
+.btn-brand {
+  @apply inline-flex items-center bg-brand-500 hover:bg-brand-600 text-white;
+}
+
+.btn-whatsapp {
+  @apply inline-flex items-center bg-[#25D366] hover:bg-[#128C7E] text-white hover:text-white;
+}
+
 .section-title {
-  @apply text-3xl lg:text-5xl mb-2 lg:mb-4;
+  @apply text-4xl font-medium mb-2;
 }
 
 .section-subtitle {
-  @apply text-2xl lg:text-4xl font-light;
+  @apply text-2xl font-light;
 }
 
 .text-muted {
@@ -22,7 +54,7 @@
 }
 
 .faq-card {
-  @apply bg-slate-900 rounded-xl p-4 flex flex-col md:max-w-[350px] shadow-lg;
+  @apply bg-slate-50 text-black rounded-xl p-4 flex flex-col md:max-w-[350px] shadow border border-transparent hover:border hover:border-brand-500;
 }
 
 .faq-card-header {
@@ -34,9 +66,9 @@
 }
 
 .faq-card-title {
-  @apply text-lg text-white;
+  @apply text-lg font-medium;
 }
 
 .faq-card-text {
-  @apply text-slate-400;
+  @apply text-slate-600 font-normal;
 }
