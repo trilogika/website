@@ -1,268 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trilogika</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script type="module" crossorigin src="/assets/index.d3be7157.js"></script>
+    <link rel="stylesheet" href="/assets/index.7e9a014b.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trilogika</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  
-  <script type="module" crossorigin src="/assets/index.1de03ae5.js"></script>
-  <link rel="stylesheet" href="/assets/index.3b91f762.css">
-</head>
-
-<body class="subpixel-antialiased">
-  <section class="container mx-auto">
-    <nav class="p-4 flex flex-wrap justify-between items-center font-semibold">
-      <img src="/assets/logo.a341e769.svg" alt="" class="w-[100px] lg:w-auto">
-      <ul class="hidden md:flex items-center space-x-4">
-        <li><a href="#about" class="hover:text-brand-500">Sobre</a></li>
-        <li><a href="#tools" class="hover:text-brand-500">Ferramentas</a></li>
-        <li><a href="#products" class="hover:text-brand-500">Produtos</a></li>
-      </ul>
-      <a href="https://web.whatsapp.com/send?phone=5527992297061&text=Ol%C3%A1!%20Quero%20conhecer%20a%20Trilogika."
-        class="inline-flex items-center font-semibold px-4 py-2 text-md text-center w-auto bg-[#25D366] hover:bg-[#128C7E] text-white hover:text-white rounded-full">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp mr-2"
-          viewBox="0 0 16 16">
-          <path
-            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
-        </svg>
-        Vamos Conversar?</a>
-    </nav>
-    <figure class="flex sm:rounded-xl overflow-hidden shadow-lg h-[350px] lg:h-[450px]">
-      <figcaption
-        class="lg:w-1/2 flex flex-col items-center lg:items-start justify-between p-8 text-white bg-gradient-to-br from-brand-600 to-indigo-700">
-        <h1 class="text-3xl lg:text-5xl xl:text-6xl font-semibold">Engajamento e transformação digital.</h1>
-        <p class="text-2xl lg:text-4xl xl:text-5xl font-light">Soluções inteligentes em tecnologia, marketing e conteúdo
-          digital para o seu
-          negócio.</p>
-        <a href="#"
-          class="font-semibold px-4 py-2 text-md text-center w-[200px] border-2 border-white hover:bg-white hover:text-brand-500 hover:shadow-lg transition-all rounded-full text-white self-center">Saiba
-          mais</a>
-      </figcaption>
-      <img src="/assets/people-cover.0195b4d0.jpg" alt="" class="hidden md:block w-1/2 object-cover">
-    </figure>
-  </section>
-  <section id="tools" class="container mx-auto my-12 p-8">
-    <header class="text-center mb-16">
-      <h1 class="section-title">Ferramentas que utilizamos</h1>
-      <p class="section-subtitle">Tão importante quanto os resultados, é a forma que entregamos</p>
-    </header>
-    <div class="flex flex-wrap gap-8 justify-around">
-      <img src="/assets/googleads.c9d792af.png" alt="googleads"
-        class="grayscale hover:grayscale-0 hover:-translate-y-1 hover:translate-x-1 hover:scale-110 transform-gpu transition-all duration-500">
-      <img src="/assets/facebookads.50ec6585.png" alt="facebookads"
-        class="grayscale hover:grayscale-0 hover:-translate-y-1 hover:translate-x-1 hover:scale-110 transform-gpu transition-all duration-500">
-      <img src="data:image/png;base64,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" alt="mailchimp"
-        class="grayscale hover:grayscale-0 hover:-translate-y-1 hover:translate-x-1 hover:scale-110 transform-gpu transition-all duration-500">
-      <img src="/assets/pipedrive.a1ae2b91.png" alt="pipedrive"
-        class="grayscale hover:grayscale-0 hover:-translate-y-1 hover:translate-x-1 hover:scale-110 transform-gpu transition-all duration-500">
-      <img src="/assets/semrush.bfdef091.png" alt="semrush"
-        class="grayscale hover:grayscale-0 hover:-translate-y-1 hover:translate-x-1 hover:scale-110 transform-gpu transition-all duration-500">
-      <img src="data:image/png;base64,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" alt="laravel"
-        class="grayscale hover:grayscale-0 hover:-translate-y-1 hover:translate-x-1 hover:scale-110 transform-gpu transition-all duration-500">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAoCAYAAABpYH0BAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANmSURBVHgB7ZnhbdswEIUfivyvNxA3qDcQO0G6gbOBu4HbCdpOkGSCZAOpEySZQMoE9gatrpEAVeYjjybT0kA+4OKEPOmRNHlHMkA57Af75bA13ggig+QavD0K5x3KoCLljyicUgbQkvIWhVPKALI4V/wMLAWWQCq8EeRsE4hQwhI+2wQiXHjqdoMZxHHAS8fFnpTPWFK+GuyaaEw6fYTO5WCfEEc/0/qJSFhc0trDYFuFTpOo0yl17jLo7KDEJIrN7S6glfpFzTtYeXS6f6Tzh8tMYqFBXGfWaYjOKrNON76TJpHc50+JPRtHeYW8WIwdW/ABeTEYw8aFpyEu7vESUCWwTg2Vz/X4UgPO1WC3Sp0Wx6cQs9BiGBxncEt8xU/6dBj/Xo1mRvNNpM+D/WCVLC5Z+BHBDnzqL2dHQ/wuAzrfPBrW4c8SSCj5GLwkQ6a1YQ9pB8BF7Xl+OTCnnkAM4gawi/Bd4oufO1cMZPFiWrohngKNmVjD/YWIxjP8+L7IR4evUfqCtKcndcY1gGzd99ChGWSBzTJNp96T8t6hnzohpvc6cQ2gJb4tdPhmx3MmHUvKHyN8e+hhfepjZqD2yOTbMhwUOpoZGPMs822hh73jaAYbpCUQYet5x5yUK6yYpJCSQATfZt8undkJ5AF62JahUTRKc4Xly4qrBF/G1tfW5RJOTSAG/MbjZvZ7RXw0y5eFiB6vk0CuSHkrP5YDaH3OCjaeujaTjiXlr5FAavBJdeMqPPUEIhjP89cL3wa6jbYLFiJ2Eb6a6y9Z4h15vnM9YHBavJA6mXl7j1i1eKb0BFLDfyTdTI7zywQWLw6zOjN+Trv7NfiJYuI7/t7/pZ5ADKmLOYHIRrzGcX/ELML9uXVV7MBH/FRzLSuW6RuEqaFfUnVEO7V2tBuZJxGLvHwZ7Kuj3BL/FmEsKY9JIKciGh99Drmu1uU9viDdIH8C2Ub4nmJyfebdN5oMIvtRqIKf/51AYvrTIDCTpyTi25y24Ei9BP7pX5kh5Fu8J3WhBAJPW2ISyA04/diOHnGbbZpArnGe1FAmgVSmJGJJvWZWlYgl5T0yMw1g6hVWaeS4wlJjwAPpuRKTbJLJcYVVEjmusNTIEk65GS6RHFdYamQALbjgOZJ6pxmFbwaeawKxpLzFK/AbqPrRmKsIhb0AAAAASUVORK5CYII=" alt="php"
-        class="grayscale hover:grayscale-0 hover:-translate-y-1 hover:translate-x-1 hover:scale-110 transform-gpu transition-all duration-500">
-      <img src="data:image/png;base64,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" alt="elixir"
-        class="grayscale hover:grayscale-0 hover:-translate-y-1 hover:translate-x-1 hover:scale-110 transform-gpu transition-all duration-500">
-      <img src="/assets/phoenixframework.ceca5782.png" alt="phoenixframework"
-        class="grayscale hover:grayscale-0 hover:-translate-y-1 hover:translate-x-1 hover:scale-110 transform-gpu transition-all duration-500">
-      <img src="data:image/png;base64,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" alt="meteor"
-        class="grayscale hover:grayscale-0 hover:-translate-y-1 hover:translate-x-1 hover:scale-110 transform-gpu transition-all duration-500">
-      <img src="/assets/reactnative.83fe423c.png" alt="reactnative"
-        class="grayscale hover:grayscale-0 hover:-translate-y-1 hover:translate-x-1 hover:scale-110 transform-gpu transition-all duration-500">
-    </div>
-  </section>
-  <section class="bg-neutral-50 p-8 border border-neutral-100">
-    <div id="products" class="container mx-auto">
+  <body class="subpixel-antialiased">
+    <span class="brand-gradient block h-1 w-full"></span>
+    <section class="mb-12">
+      <div class="container mx-auto">
+        <nav
+          class="flex flex-wrap items-center justify-between p-4 font-medium"
+        >
+          <img src="/assets/logo.a341e769.svg" alt="" class="h-[45px] lg:w-auto" />
+          <div class="hidden items-center space-x-4 md:flex">
+            <a href="#about" class="link">Sobre</a>
+            <a href="#tools" class="link">Ferramentas</a>
+            <a href="#products" class="link">Produtos</a>
+            <a
+              href="https://web.whatsapp.com/send?phone=5527992297061&text=Ol%C3%A1!%20Quero%20conhecer%20a%20Trilogika."
+              class="btn btn-whatsapp"
+            >
+              <i class="bi bi-whatsapp mr-1"></i>
+              Vamos conversar?
+            </a>
+          </div>
+        </nav>
+        <figure class="flex items-center pt-20">
+          <figcaption
+            class="flex flex-col items-center justify-between lg:w-1/2 lg:items-start"
+          >
+            <h1 class="mb-6 text-5xl font-semibold lg:text-6xl">
+              Engajamento e transformação digital.
+            </h1>
+            <p class="text-2xl font-light">
+              Soluções inteligentes em tecnologia, marketing e conteúdo digital
+              para o seu negócio.
+            </p>
+            <a href="#faq" class="btn btn-brand mt-6 self-center text-xl"
+              >Saiba mais sobre nós</a
+            >
+          </figcaption>
+          <img
+            src="/assets/trophy.a120f6fb.svg"
+            alt=""
+            class="hidden w-1/2 object-cover md:block"
+          />
+        </figure>
+      </div>
+    </section>
+    <section id="tools" class="bg-slate-50 p-8">
+      <div class="container mx-auto">
+        <header class="mb-16 text-center">
+          <h1 class="section-title">Ferramentas que utilizamos</h1>
+          <p class="section-subtitle">
+            Tão importante quanto os resultados, é a forma que entregamos
+          </p>
+        </header>
+        <div class="flex flex-wrap justify-around gap-6">
+          <div class="flex w-full justify-center md:w-auto md:min-w-min">
+            <img
+              src="/assets/googleads.c9d792af.png"
+              alt="googleads"
+              class="gray-reveal"
+            />
+          </div>
+          <div class="flex w-full justify-center md:w-auto md:min-w-min">
+            <img
+              src="/assets/facebookads.50ec6585.png"
+              alt="facebookads"
+              class="gray-reveal"
+            />
+          </div>
+          <div class="flex w-full justify-center md:w-auto md:min-w-min">
+            <img
+              src="data:image/png;base64,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"
+              alt="mailchimp"
+              class="gray-reveal"
+            />
+          </div>
+          <div class="flex w-full justify-center md:w-auto md:min-w-min">
+            <img
+              src="/assets/pipedrive.a1ae2b91.png"
+              alt="pipedrive"
+              class="gray-reveal"
+            />
+          </div>
+          <div class="flex w-full justify-center md:w-auto md:min-w-min">
+            <img
+              src="/assets/semrush.bfdef091.png"
+              alt="semrush"
+              class="gray-reveal"
+            />
+          </div>
+          <div class="flex w-full justify-center md:w-auto md:min-w-min">
+            <img
+              src="data:image/png;base64,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"
+              alt="laravel"
+              class="gray-reveal"
+            />
+          </div>
+          <div class="flex w-full justify-center md:w-auto md:min-w-min">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAoCAYAAABpYH0BAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANmSURBVHgB7ZnhbdswEIUfivyvNxA3qDcQO0G6gbOBu4HbCdpOkGSCZAOpEySZQMoE9gatrpEAVeYjjybT0kA+4OKEPOmRNHlHMkA57Af75bA13ggig+QavD0K5x3KoCLljyicUgbQkvIWhVPKALI4V/wMLAWWQCq8EeRsE4hQwhI+2wQiXHjqdoMZxHHAS8fFnpTPWFK+GuyaaEw6fYTO5WCfEEc/0/qJSFhc0trDYFuFTpOo0yl17jLo7KDEJIrN7S6glfpFzTtYeXS6f6Tzh8tMYqFBXGfWaYjOKrNON76TJpHc50+JPRtHeYW8WIwdW/ABeTEYw8aFpyEu7vESUCWwTg2Vz/X4UgPO1WC3Sp0Wx6cQs9BiGBxncEt8xU/6dBj/Xo1mRvNNpM+D/WCVLC5Z+BHBDnzqL2dHQ/wuAzrfPBrW4c8SSCj5GLwkQ6a1YQ9pB8BF7Xl+OTCnnkAM4gawi/Bd4oufO1cMZPFiWrohngKNmVjD/YWIxjP8+L7IR4evUfqCtKcndcY1gGzd99ChGWSBzTJNp96T8t6hnzohpvc6cQ2gJb4tdPhmx3MmHUvKHyN8e+hhfepjZqD2yOTbMhwUOpoZGPMs822hh73jaAYbpCUQYet5x5yUK6yYpJCSQATfZt8undkJ5AF62JahUTRKc4Xly4qrBF/G1tfW5RJOTSAG/MbjZvZ7RXw0y5eFiB6vk0CuSHkrP5YDaH3OCjaeujaTjiXlr5FAavBJdeMqPPUEIhjP89cL3wa6jbYLFiJ2Eb6a6y9Z4h15vnM9YHBavJA6mXl7j1i1eKb0BFLDfyTdTI7zywQWLw6zOjN+Trv7NfiJYuI7/t7/pZ5ADKmLOYHIRrzGcX/ELML9uXVV7MBH/FRzLSuW6RuEqaFfUnVEO7V2tBuZJxGLvHwZ7Kuj3BL/FmEsKY9JIKciGh99Drmu1uU9viDdIH8C2Ub4nmJyfebdN5oMIvtRqIKf/51AYvrTIDCTpyTi25y24Ei9BP7pX5kh5Fu8J3WhBAJPW2ISyA04/diOHnGbbZpArnGe1FAmgVSmJGJJvWZWlYgl5T0yMw1g6hVWaeS4wlJjwAPpuRKTbJLJcYVVEjmusNTIEk65GS6RHFdYamQALbjgOZJ6pxmFbwaeawKxpLzFK/AbqPrRmKsIhb0AAAAASUVORK5CYII=" alt="php" class="gray-reveal" />
+          </div>
+          <div class="flex w-full justify-center md:w-auto md:min-w-min">
+            <img
+              src="data:image/png;base64,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"
+              alt="elixir"
+              class="gray-reveal"
+            />
+          </div>
+          <div class="flex w-full justify-center md:w-auto md:min-w-min">
+            <img
+              src="/assets/phoenixframework.ceca5782.png"
+              alt="phoenixframework"
+              class="gray-reveal"
+            />
+          </div>
+          <div class="flex w-full justify-center md:w-auto md:min-w-min">
+            <img
+              src="data:image/png;base64,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"
+              alt="meteor"
+              class="gray-reveal"
+            />
+          </div>
+          <div class="flex w-full justify-center md:w-auto md:min-w-min">
+            <img
+              src="/assets/reactnative.83fe423c.png"
+              alt="reactnative"
+              class="gray-reveal"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="products" class="p-8">
+      <div class="container mx-auto">
+        <header class="mb-16 text-center">
+          <h1 class="section-title">Nossas especialidades</h1>
+          <p class="section-subtitle">
+            Somos peritos em transformar o seu negócio através das seguintes
+            áreas
+          </p>
+        </header>
+        <div class="mx-auto grid grid-cols-1 gap-6 lg:grid-cols-3">
+          <div class="flex flex-col items-center">
+            <div class="circle-icon-gradient">
+              <i class="bi bi-megaphone text-white"></i>
+            </div>
+            <h2 class="my-2 text-2xl font-semibold">Marketing</h2>
+            <p class="text-muted text-justify">
+              Atraia os clientes certos para o seu negócio com as nossas
+              estratégias de marketing digital. Do branding às vendas, o nosso
+              negócio é vender o seu
+            </p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="circle-icon-gradient">
+              <i class="bi bi-body-text text-white"></i>
+            </div>
+            <h2 class="my-2 text-2xl font-semibold">Conteúdo</h2>
+            <p class="text-muted text-justify">
+              De gestão de mídias sociais à produção de ebooks, artigos para
+              blogs, e-mail marketing, e muito mais. Conte com a produção
+              estratégica de conteúdos da Trilogika para promover o seu negócio
+            </p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="circle-icon-gradient">
+              <i class="bi bi-cpu text-white"></i>
+            </div>
+            <h2 class="my-2 text-2xl font-semibold">Tecnologia</h2>
+            <p class="text-muted text-justify">
+              Entregamos soluções em diversos setores da tecnologia para
+              construir produtos adequados às necessidades do seu negócio com
+              metodologias ágeis e dinâmicas
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="brand-gradient p-8 text-white">
+      <div id="about" class="container mx-auto">
+        <header class="text-center">
+          <h1 class="section-title">Nascemos pra gerar resultado</h1>
+          <p class="section-subtitle text-brand-50">
+            Já nascemos com o pé no digital, com soluções maduras e um time
+            eficiente focado em gerar resultado. As soluções estratégicas da
+            Trilogika podem ajudar a modernizar e alavancar o seu negócio
+          </p>
+        </header>
+      </div>
+    </section>
+    <section id="faq" class="mb-12 p-8">
       <header class="mb-16 text-center">
-        <h1 class="section-title">Nossas especialidades</h1>
-        <p class="section-subtitle">Somos peritos em transformar o seu negócio através das
-          seguintes áreas
+        <h1 class="section-title">Perguntas frequentes</h1>
+        <p class="section-subtitle">
+          Vejas os são os assuntos mais perguntados pelos nossos clientes
         </p>
       </header>
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-[1000px] mx-auto">
-        <div class="h-[200px] lg:h-[300px] max-w-[450px] mx-auto p-4 flex flex-col justify-around items-center mb-4">
-          <div
-            class="rounded-full bg-gradient-to-br from-violet-500 to-brand-500 p-4 flex items-center shadow-lg border border-brand-50 shadow-violet-200">
-            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor"
-              class="bi bi-megaphone  fill-white" viewBox="0 0 16 16">
-              <path
-                d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49a68.14 68.14 0 0 0-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 74.663 74.663 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199V2.5zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0zm-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233c.18.01.359.022.537.036 2.568.189 5.093.744 7.463 1.993V3.85zm-9 6.215v-4.13a95.09 95.09 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A60.49 60.49 0 0 1 4 10.065zm-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68.019 68.019 0 0 0-1.722-.082z" />
-            </svg>
+      <div class="flex flex-wrap justify-center gap-6">
+        <div class="faq-card">
+          <div class="faq-card-header">
+            <img
+              src="/assets/person_1.f13bc37c.png"
+              class="faq-card-avatar"
+              alt=""
+            />
+            <h2 class="faq-card-title">Quais serviços a Trilogika oferece?</h2>
           </div>
-          <h2 class="text-2xl font-semibold my-2">Marketing</h2>
-          <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the
-            industry's standard dummy text ever since the 1500s</p>
+          <p class="faq-card-text">
+            Atuamos em diversas frentes, como: Marketing Digital, Web Design,
+            Identidade Visual, Criação de App Mobile, Desenvolvimento de
+            projetos WEB, Outsourcing, Gerenciamento de projetos Web
+          </p>
         </div>
-        <div class="h-[200px] lg:h-[300px] max-w-[450px] mx-auto p-4 flex flex-col justify-around items-center mb-4">
-          <div
-            class="rounded-full bg-gradient-to-br from-violet-500 to-brand-500 p-4 flex items-center shadow-lg border border-brand-50 shadow-violet-200">
-            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor"
-              class="bi bi-body-text fill-white" viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M0 .5A.5.5 0 0 1 .5 0h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 0 .5Zm0 2A.5.5 0 0 1 .5 2h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5Zm9 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Zm-9 2A.5.5 0 0 1 .5 4h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Zm5 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Zm7 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Zm-12 2A.5.5 0 0 1 .5 6h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5Zm8 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Zm-8 2A.5.5 0 0 1 .5 8h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Zm7 0a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5Zm-7 2a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Z" />
-            </svg>
+        <div class="faq-card">
+          <div class="faq-card-header">
+            <img
+              src="/assets/person_2.5810de4a.png"
+              class="faq-card-avatar"
+              alt=""
+            />
+            <h2 class="faq-card-title">
+              Quanto custa para contratar a Trilogika?
+            </h2>
           </div>
-          <h2 class="text-2xl font-semibold my-2">Conteúdo</h2>
-          <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the
-            industry's standard dummy text ever since the 1500s</p>
+          <p class="faq-card-text">
+            Nossos custos dependem de uma análise de demanda específica, após o
+            contato feito pelo cliente, realizamos uma reunião para entender as
+            necessidades e então formalizamos uma proposta comercial.
+          </p>
         </div>
-        <div class="h-[200px] lg:h-[300px] max-w-[450px] mx-auto p-4 flex flex-col justify-around items-center mb-4">
-          <div
-            class="rounded-full bg-gradient-to-br from-violet-500 to-brand-500 p-4 flex items-center shadow-lg border border-brand-50 shadow-violet-200">
-            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor"
-              class="bi bi-cpu fill-white" viewBox="0 0 16 16">
-              <path
-                d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
-            </svg>
+        <div class="faq-card">
+          <div class="faq-card-header">
+            <img
+              src="/assets/person_3.de62d938.png"
+              class="faq-card-avatar"
+              alt=""
+            />
+            <h2 class="faq-card-title">Como faço para obter um orçamento?</h2>
           </div>
-          <h2 class="text-2xl font-semibold my-2">Tecnologia</h2>
-          <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the
-            industry's standard dummy text ever since the 1500s</p>
+          <p class="faq-card-text">
+            Faça contato pelo nosso botão do Whatsapp ou envie um email para
+            <a href="mailto:contato@trilogika.com.br" class="text-brand-500"
+              >contato@trilogika.com.br</a
+            >
+            que teremos uma grande satisfação em atendê-lo!
+          </p>
+        </div>
+        <div class="faq-card">
+          <div class="faq-card-header">
+            <img
+              src="/assets/person_4.c5610c55.png"
+              class="faq-card-avatar"
+              alt=""
+            />
+            <h2 class="faq-card-title">Vocês fazem tráfego pago?</h2>
+          </div>
+          <p class="faq-card-text">
+            Sim! Nossas campanhas de tráfego pago utilizam as estratégias mais
+            sofisticadas de marketing digital, aplicando técnicas como
+            remarketing, para potencializar os resultados do nosso cliente.
+          </p>
+        </div>
+        <div class="faq-card">
+          <div class="faq-card-header">
+            <img
+              src="/assets/person_5.90d9ad4a.png"
+              class="faq-card-avatar"
+              alt=""
+            />
+            <h2 class="faq-card-title">Vocês criam sites e aplicativos?</h2>
+          </div>
+          <p class="faq-card-text">
+            Sim! Somos um time versátil, além de sites e aplicativos a Trilogika
+            também cria sistemas sob medida e outras soluções relacionadas a
+            tratamento de dados e hospedagem.
+          </p>
+        </div>
+        <div class="faq-card">
+          <div class="faq-card-header">
+            <img
+              src="/assets/person_6.efd34270.png"
+              class="faq-card-avatar"
+              alt=""
+            />
+            <h2 class="faq-card-title">Vocês prestam consultoria?</h2>
+          </div>
+          <p class="faq-card-text">
+            Sim! Nossos programas de consultoria nas áreas de Marketing Digital
+            e Tecnologia tem como objetivo acessorar e orientar nossos clientes
+            sobre a melhor forma de alcançar os resultados desejados.
+          </p>
+        </div>
+        <div class="faq-card">
+          <div class="faq-card-header">
+            <img
+              src="/assets/person_7.49f5ecbc.png"
+              class="faq-card-avatar"
+              alt=""
+            />
+            <h2 class="faq-card-title">
+              E se minha empresa precisar de um parceiro?
+            </h2>
+          </div>
+          <p class="faq-card-text">
+            A Trilogika é uma empresa focada em produzir soluções e resultados e
+            estamos sempre abertos a parcerias. Se o seu negócio também possui
+            esses objetivos em comum, faça contato e vamos conversar a respeito.
+          </p>
+        </div>
+        <div class="faq-card">
+          <div class="faq-card-header">
+            <img
+              src="/assets/person_8.cd73b219.png"
+              class="faq-card-avatar"
+              alt=""
+            />
+            <h2 class="faq-card-title">
+              Que tipo de conteúdo pra mídias sociais vocês trabalham?
+            </h2>
+          </div>
+          <p class="faq-card-text">
+            O trabalho de gestão e produção de conteúdos para as mídias sociais
+            oferecidos pela Trilogika são em diversos formatos. Tudo isso de
+            acordo com a estratégia e escolha do cliente. Criamos formatos
+            estáticos, vídeos animados e narrados, vídeos institucionais, dentre
+            outros.
+          </p>
+        </div>
+        <div class="faq-card">
+          <div class="faq-card-header">
+            <img
+              src="/assets/person_9.df305f2c.png"
+              class="faq-card-avatar"
+              alt=""
+            />
+            <h2 class="faq-card-title">
+              Como funciona o serviço de melhoria de conteúdo?
+            </h2>
+          </div>
+          <p class="faq-card-text">
+            Para elevar a produção de conteúdo da sua marca, é preciso antes de
+            tudo, pensar de forma objetiva. Na Trilógica nós entendemos o seu
+            negócio para produzir conteúdos estratégicos que promovam maior
+            alcance para a sua marca com grande potencial de conversão.
+          </p>
+        </div>
+        <div class="faq-card">
+          <div class="faq-card-header">
+            <img
+              src="/assets/person_5.90d9ad4a.png"
+              class="faq-card-avatar"
+              alt=""
+            />
+            <h2 class="faq-card-title">
+              Quais metodologias de trabalho a Trilogika utiliza?
+            </h2>
+          </div>
+          <p class="faq-card-text">
+            Nossos times são versados em várias disciplinas que nos permitem ter
+            uma visão clara de objetivos e ao mesmo tempo mantendo foco em
+            resultados tangíveis. Trabalhamos com transparência e agilidade para
+            atender as mais diversas necessidades do seu negócio.
+          </p>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="bg-slate-900 text-white p-8">
-    <div id="about" class="container mx-auto">
-      <header class="text-center">
-        <h1 class="section-title text-brand-400">Nascemos pra gerar resultado</h1>
-        <p class="section-subtitle">Voluptatem sed natus quo. Numquam eius culpa sit
-          voluptas
-          explicabo
-          aperiam expedita. In magni voluptates aut distinctio porro maiores. Cum autem hic assumenda. Illum autem sint
-          molestias hic laboriosam.
-        </p>
-      </header>
-    </div>
-  </section>
-  <section class="p-8 mb-12">
-    <header class="mb-16 text-center">
-      <h1 class="section-title">Perguntas frequentes</h1>
-      <p class="section-subtitle">Vejas os são os assuntos mais perguntados pelos nossos
-        clientes</p>
-    </header>
-    <div class="flex flex-wrap justify-center gap-2">
-      <div class="faq-card">
-        <div class="faq-card-header">
-          <img src="/assets/person_1.f13bc37c.png" class="faq-card-avatar" alt="">
-          <h2 class="faq-card-title">Quais serviços a Trilogika oferece?</h2>
-        </div>
-        <p class="faq-card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem
-          Ipsum has been the
-          industry's standard dummy text ever since the 1500s</p>
+    </section>
+    <footer class="container mx-auto border-t p-2">
+      <div class="flex items-center justify-between">
+        <img src="/assets/logo-vertical.ee085e48.svg" alt="logo" class="h-16 w-auto" />
+        <small class="text-muted"
+          >Copyright © 2022 Trilogika. Todos os direitos reservados.</small
+        >
+        <ul class="flex justify-between space-x-4 text-2xl">
+          <li>
+            <a href="#" class="link" title="Facebook" alt="Facebook"
+              ><i class="bi bi-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="link" title="Instagram" alt="Instagram"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="link" title="LinkedIn" alt="LinkedIn"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+          </li>
+        </ul>
       </div>
-      <div class="faq-card">
-        <div class="faq-card-header">
-          <img src="/assets/person_2.5810de4a.png" class="faq-card-avatar" alt="">
-          <h2 class="faq-card-title">Quanto custa para contratar a Trilogika?</h2>
-        </div>
-        <p class="faq-card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem
-          Ipsum has been the
-          industry's standard dummy text ever since the 1500s</p>
-      </div>
-      <div class="faq-card">
-        <div class="faq-card-header">
-          <img src="/assets/person_3.de62d938.png" class="faq-card-avatar" alt="">
-          <h2 class="faq-card-title">Como faço para obter um orçamento?</h2>
-        </div>
-        <p class="faq-card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem
-          Ipsum has been the
-          industry's standard dummy text ever since the 1500s</p>
-      </div>
-      <div class="faq-card">
-        <div class="faq-card-header">
-          <img src="/assets/person_4.c5610c55.png" class="faq-card-avatar" alt="">
-          <h2 class="faq-card-title">Vocês fazem tráfego pago?</h2>
-        </div>
-        <p class="faq-card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem
-          Ipsum has been the
-          industry's standard dummy text ever since the 1500s</p>
-      </div>
-      <div class="faq-card">
-        <div class="faq-card-header">
-          <img src="/assets/person_5.90d9ad4a.png" class="faq-card-avatar" alt="">
-          <h2 class="faq-card-title">Vocês criam sites e aplicativos?</h2>
-        </div>
-        <p class="faq-card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem
-          Ipsum has been the
-          industry's standard dummy text ever since the 1500s</p>
-      </div>
-      <div class="faq-card">
-        <div class="faq-card-header">
-          <img src="/assets/person_5.90d9ad4a.png" class="faq-card-avatar" alt="">
-          <h2 class="faq-card-title">Vocês criam sites e aplicativos?</h2>
-        </div>
-        <p class="faq-card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem
-          Ipsum has been the
-          industry's standard dummy text ever since the 1500s</p>
-      </div>
-      <div class="faq-card">
-        <div class="faq-card-header">
-          <img src="/assets/person_6.efd34270.png" class="faq-card-avatar" alt="">
-          <h2 class="faq-card-title">Vocês prestam consultoria?</h2>
-        </div>
-        <p class="faq-card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem
-          Ipsum has been the
-          industry's standard dummy text ever since the 1500s</p>
-      </div>
-      <div class="faq-card">
-        <div class="faq-card-header">
-          <img src="/assets/person_7.49f5ecbc.png" class="faq-card-avatar" alt="">
-          <h2 class="faq-card-title">E se minha empresa precisar de um parceiro?</h2>
-        </div>
-        <p class="faq-card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem
-          Ipsum has been the
-          industry's standard dummy text ever since the 1500s</p>
-      </div>
-      <div class="faq-card">
-        <div class="faq-card-header">
-          <img src="/assets/person_8.cd73b219.png" class="faq-card-avatar" alt="">
-          <h2 class="faq-card-title">Que tipo de conteúdo pra mídias sociais vocês trabalham?</h2>
-        </div>
-        <p class="faq-card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem
-          Ipsum has been the
-          industry's standard dummy text ever since the 1500s</p>
-      </div>
-      <div class="faq-card">
-        <div class="faq-card-header">
-          <img src="/assets/person_9.df305f2c.png" class="faq-card-avatar" alt="">
-          <h2 class="faq-card-title">Como funciona o serviço de melhoria de conteúdo?</h2>
-        </div>
-        <p class="faq-card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem
-          Ipsum has been the
-          industry's standard dummy text ever since the 1500s</p>
-      </div>
-    </div>
-  </section>
-  <footer class="container mx-auto flex flex-col items-center justify-center space-y-4 p-4">
-    <img src="/assets/logo-vertical.ee085e48.svg" width="84" height="84" alt="logo">
-    <ul class="flex justify-between space-x-4 font-semibold">
-      <li><a href="#" class="hover:text-brand-500">Facebook</a></li>
-      <li><a href="#" class="hover:text-brand-500">Instagram</a></li>
-      <li><a href="#" class="hover:text-brand-500">LinkedIn</a></li>
-    </ul>
-    <small class="text-muted">© 2022 Todos os direitos reservados | Trilogika.</small>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
