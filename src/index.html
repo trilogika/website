@@ -1,266 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trilogika</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="./index.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trilogika</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <script type="module" src="./index.js"></script>
-</head>
-
-<body class="subpixel-antialiased">
-  <span class="h-1 brand-gradient block w-full"></span>
-  <section class="mb-12">
-    <div class="container mx-auto">
-      <nav class="p-4 flex flex-wrap justify-between items-center font-medium">
-        <img src="./assets/logo.svg" alt="" class="h-[45px] lg:w-auto">
-        <div class="hidden md:flex items-center space-x-4">
-          <a href="#about" class="link">Sobre</a>
-          <a href="#tools" class="link">Ferramentas</a>
-          <a href="#products" class="link">Produtos</a>
-          <a href="https://web.whatsapp.com/send?phone=5527992297061&text=Ol%C3%A1!%20Quero%20conhecer%20a%20Trilogika."
-            class="btn btn-whatsapp">
-            <i class="bi bi-whatsapp mr-1"></i>
-            Vamos conversar?
-          </a>
-        </div>
-      </nav>
-      <figure class="flex items-center pt-20">
-        <figcaption class="lg:w-1/2 flex flex-col items-center lg:items-start justify-between">
-          <h1 class="text-5xl lg:text-6xl font-semibold mb-6">Engajamento e transformação digital.</h1>
-          <p class="text-2xl font-light">
-            Soluções inteligentes em tecnologia, marketing e conteúdo digital para o seu negócio.
+  <body class="subpixel-antialiased">
+    <span class="brand-gradient block h-1 w-full"></span>
+    <section class="mb-12">
+      <div class="container mx-auto">
+        <nav
+          class="flex flex-wrap items-center justify-between p-4 font-medium"
+        >
+          <img src="./assets/logo.svg" alt="" class="h-[45px] lg:w-auto" />
+          <div class="hidden items-center space-x-4 md:flex">
+            <a href="#about" class="link">Sobre</a>
+            <a href="#tools" class="link">Ferramentas</a>
+            <a href="#products" class="link">Produtos</a>
+            <a
+              href="https://web.whatsapp.com/send?phone=5527992297061&text=Ol%C3%A1!%20Quero%20conhecer%20a%20Trilogika."
+              class="btn btn-whatsapp"
+            >
+              <i class="bi bi-whatsapp mr-1"></i>
+              Vamos conversar?
+            </a>
+          </div>
+        </nav>
+        <figure class="flex items-center pt-20">
+          <figcaption
+            class="flex flex-col items-center justify-between lg:w-1/2 lg:items-start"
+          >
+            <h1 class="mb-6 text-5xl font-semibold lg:text-6xl">
+              Engajamento e transformação digital.
+            </h1>
+            <p class="text-2xl font-light">
+              Soluções inteligentes em tecnologia, marketing e conteúdo digital
+              para o seu negócio.
+            </p>
+            <a href="#faq" class="btn btn-brand mt-6 self-center text-xl"
+              >Saiba mais sobre nós</a
+            >
+          </figcaption>
+          <img
+            src="./assets/trophy.svg"
+            alt=""
+            class="hidden w-1/2 object-cover md:block"
+          />
+        </figure>
+      </div>
+    </section>
+    <section id="tools" class="bg-slate-50 p-8">
+      <div class="container mx-auto">
+        <header class="mb-16 text-center">
+          <h1 class="section-title">Ferramentas que utilizamos</h1>
+          <p class="section-subtitle">
+            Tão importante quanto os resultados, é a forma que entregamos
           </p>
-          <a href="#faq" class="btn btn-brand mt-6 text-xl self-center">Saiba mais sobre nós</a>
-        </figcaption>
-        <img src="./assets/trophy.svg" alt="" class="hidden md:block w-1/2 object-cover">
-      </figure>
-    </div>
-  </section>
-  <section id="tools" class="p-8 bg-slate-50">
-    <div class="container mx-auto">
-      <header class="text-center mb-16">
-        <h1 class="section-title">Ferramentas que utilizamos</h1>
-        <p class="section-subtitle">Tão importante quanto os resultados, é a forma que entregamos</p>
-      </header>
-      <div class="flex flex-wrap gap-6 justify-around">
-        <div class="flex justify-center w-full md:w-auto md:min-w-min">
-          <img src="./assets/tools/googleads.png" alt="googleads" class="gray-reveal">
-        </div>
-        <div class="flex justify-center w-full md:w-auto md:min-w-min">
-          <img src="./assets/tools/facebookads.png" alt="facebookads" class="gray-reveal">
-        </div>
-        <div class="flex justify-center w-full md:w-auto md:min-w-min">
-          <img src="./assets/tools/mailchimp.png" alt="mailchimp" class="gray-reveal">
-        </div>
-        <div class="flex justify-center w-full md:w-auto md:min-w-min">
-          <img src="./assets/tools/pipedrive.png" alt="pipedrive" class="gray-reveal">
-        </div>
-        <div class="flex justify-center w-full md:w-auto md:min-w-min">
-          <img src="./assets/tools/semrush.png" alt="semrush" class="gray-reveal">
-        </div>
-        <div class="flex justify-center w-full md:w-auto md:min-w-min">
-          <img src="./assets/tools/laravel.png" alt="laravel" class="gray-reveal">
-        </div>
-        <div class="flex justify-center w-full md:w-auto md:min-w-min">
-          <img src="./assets/tools/php.png" alt="php" class="gray-reveal">
-        </div>
-        <div class="flex justify-center w-full md:w-auto md:min-w-min">
-          <img src="./assets/tools/elixir.png" alt="elixir" class="gray-reveal">
-        </div>
-        <div class="flex justify-center w-full md:w-auto md:min-w-min">
-          <img src="./assets/tools/phoenixframework.png" alt="phoenixframework" class="gray-reveal">
-        </div>
-        <div class="flex justify-center w-full md:w-auto md:min-w-min">
-          <img src="./assets/tools/meteor.png" alt="meteor" class="gray-reveal">
-        </div>
-        <div class="flex justify-center w-full md:w-auto md:min-w-min">
-          <img src="./assets/tools/reactnative.png" alt="reactnative" class="gray-reveal">
+        </header>
+        <div class="flex flex-wrap justify-around gap-6">
+          <div class="flex w-full justify-center md:w-auto md:min-w-min">
+            <img
+              src="./assets/tools/googleads.png"
+              alt="googleads"
+              class="gray-reveal"
+            />
+          </div>
+          <div class="flex w-full justify-center md:w-auto md:min-w-min">
+            <img
+              src="./assets/tools/facebookads.png"
+              alt="facebookads"
+              class="gray-reveal"
+            />
+          </div>
+          <div class="flex w-full justify-center md:w-auto md:min-w-min">
+            <img
+              src="./assets/tools/mailchimp.png"
+              alt="mailchimp"
+              class="gray-reveal"
+            />
+          </div>
+          <div class="flex w-full justify-center md:w-auto md:min-w-min">
+            <img
+              src="./assets/tools/pipedrive.png"
+              alt="pipedrive"
+              class="gray-reveal"
+            />
+          </div>
+          <div class="flex w-full justify-center md:w-auto md:min-w-min">
+            <img
+              src="./assets/tools/semrush.png"
+              alt="semrush"
+              class="gray-reveal"
+            />
+          </div>
+          <div class="flex w-full justify-center md:w-auto md:min-w-min">
+            <img
+              src="./assets/tools/laravel.png"
+              alt="laravel"
+              class="gray-reveal"
+            />
+          </div>
+          <div class="flex w-full justify-center md:w-auto md:min-w-min">
+            <img src="./assets/tools/php.png" alt="php" class="gray-reveal" />
+          </div>
+          <div class="flex w-full justify-center md:w-auto md:min-w-min">
+            <img
+              src="./assets/tools/elixir.png"
+              alt="elixir"
+              class="gray-reveal"
+            />
+          </div>
+          <div class="flex w-full justify-center md:w-auto md:min-w-min">
+            <img
+              src="./assets/tools/phoenixframework.png"
+              alt="phoenixframework"
+              class="gray-reveal"
+            />
+          </div>
+          <div class="flex w-full justify-center md:w-auto md:min-w-min">
+            <img
+              src="./assets/tools/meteor.png"
+              alt="meteor"
+              class="gray-reveal"
+            />
+          </div>
+          <div class="flex w-full justify-center md:w-auto md:min-w-min">
+            <img
+              src="./assets/tools/reactnative.png"
+              alt="reactnative"
+              class="gray-reveal"
+            />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section id="products" class="p-8">
-    <div class="container mx-auto">
+    </section>
+    <section id="products" class="p-8">
+      <div class="container mx-auto">
+        <header class="mb-16 text-center">
+          <h1 class="section-title">Nossas especialidades</h1>
+          <p class="section-subtitle">
+            Somos peritos em transformar o seu negócio através das seguintes
+            áreas
+          </p>
+        </header>
+        <div class="mx-auto grid grid-cols-1 gap-6 lg:grid-cols-3">
+          <div class="flex flex-col items-center">
+            <div class="circle-icon-gradient">
+              <i class="bi bi-megaphone text-white"></i>
+            </div>
+            <h2 class="my-2 text-2xl font-semibold">Marketing</h2>
+            <p class="text-muted text-justify">
+              Atraia os clientes certos para o seu negócio com as nossas
+              estratégias de marketing digital. Do branding às vendas, o nosso
+              negócio é vender o seu
+            </p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="circle-icon-gradient">
+              <i class="bi bi-body-text text-white"></i>
+            </div>
+            <h2 class="my-2 text-2xl font-semibold">Conteúdo</h2>
+            <p class="text-muted text-justify">
+              De gestão de mídias sociais à produção de ebooks, artigos para
+              blogs, e-mail marketing, e muito mais. Conte com a produção
+              estratégica de conteúdos da Trilogika para promover o seu negócio
+            </p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="circle-icon-gradient">
+              <i class="bi bi-cpu text-white"></i>
+            </div>
+            <h2 class="my-2 text-2xl font-semibold">Tecnologia</h2>
+            <p class="text-muted text-justify">
+              Entregamos soluções em diversos setores da tecnologia para
+              construir produtos adequados às necessidades do seu negócio com
+              metodologias ágeis e dinâmicas
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="brand-gradient p-8 text-white">
+      <div id="about" class="container mx-auto">
+        <header class="text-center">
+          <h1 class="section-title">Nascemos pra gerar resultado</h1>
+          <p class="section-subtitle text-brand-50">
+            Já nascemos com o pé no digital, com soluções maduras e um time
+            eficiente focado em gerar resultado. As soluções estratégicas da
+            Trilogika podem ajudar a modernizar e alavancar o seu negócio
+          </p>
+        </header>
+      </div>
+    </section>
+    <section id="faq" class="mb-12 p-8">
       <header class="mb-16 text-center">
-        <h1 class="section-title">Nossas especialidades</h1>
-        <p class="section-subtitle">Somos peritos em transformar o seu negócio através das
-          seguintes áreas
+        <h1 class="section-title">Perguntas frequentes</h1>
+        <p class="section-subtitle">
+          Vejas os são os assuntos mais perguntados pelos nossos clientes
         </p>
       </header>
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mx-auto">
-        <div class="flex flex-col items-center">
-          <div class="circle-icon-gradient">
-            <i class="bi bi-megaphone text-white"></i>
+      <div class="flex flex-wrap justify-center gap-6">
+        <div class="faq-card">
+          <div class="faq-card-header">
+            <img
+              src="./assets/avatars/person_1.png"
+              class="faq-card-avatar"
+              alt=""
+            />
+            <h2 class="faq-card-title">Quais serviços a Trilogika oferece?</h2>
           </div>
-          <h2 class="text-2xl font-semibold my-2">Marketing</h2>
-          <p class="text-muted text-justify">Atraia os clientes certos para o seu negócio com as nossas estratégias de
-            marketing
-            digital. Do branding às vendas, o nosso negócio é vender o seu</p>
+          <p class="faq-card-text">
+            Atuamos em diversas frentes, como: Marketing Digital, Web Design,
+            Identidade Visual, Criação de App Mobile, Desenvolvimento de
+            projetos WEB, Outsourcing, Gerenciamento de projetos Web
+          </p>
         </div>
-        <div class="flex flex-col items-center">
-          <div class="circle-icon-gradient">
-            <i class="bi bi-body-text text-white"></i>
+        <div class="faq-card">
+          <div class="faq-card-header">
+            <img
+              src="./assets/avatars/person_2.png"
+              class="faq-card-avatar"
+              alt=""
+            />
+            <h2 class="faq-card-title">
+              Quanto custa para contratar a Trilogika?
+            </h2>
           </div>
-          <h2 class="text-2xl font-semibold my-2">Conteúdo</h2>
-          <p class="text-muted text-justify">De gestão de mídias sociais à produção de ebooks, artigos para blogs,
-            e-mail marketing,
-            e muito mais. Conte com a produção estratégica de conteúdos da Trilogika para promover o seu negócio</p>
+          <p class="faq-card-text">
+            Nossos custos dependem de uma análise de demanda específica, após o
+            contato feito pelo cliente, realizamos uma reunião para entender as
+            necessidades e então formalizamos uma proposta comercial.
+          </p>
         </div>
-        <div class="flex flex-col items-center">
-          <div class="circle-icon-gradient">
-            <i class="bi bi-cpu text-white"></i>
+        <div class="faq-card">
+          <div class="faq-card-header">
+            <img
+              src="./assets/avatars/person_3.png"
+              class="faq-card-avatar"
+              alt=""
+            />
+            <h2 class="faq-card-title">Como faço para obter um orçamento?</h2>
           </div>
-          <h2 class="text-2xl font-semibold my-2">Tecnologia</h2>
-          <p class="text-muted text-justify">Entregamos soluções em diversos setores da tecnologia para construir
-            produtos adequados
-            às necessidades do seu negócio com metodologias ágeis e dinâmicas</p>
+          <p class="faq-card-text">
+            Faça contato pelo nosso botão do Whatsapp ou envie um email para
+            <a href="mailto:contato@trilogika.com.br" class="text-brand-500"
+              >contato@trilogika.com.br</a
+            >
+            que teremos uma grande satisfação em atendê-lo!
+          </p>
+        </div>
+        <div class="faq-card">
+          <div class="faq-card-header">
+            <img
+              src="./assets/avatars/person_4.png"
+              class="faq-card-avatar"
+              alt=""
+            />
+            <h2 class="faq-card-title">Vocês fazem tráfego pago?</h2>
+          </div>
+          <p class="faq-card-text">
+            Sim! Nossas campanhas de tráfego pago utilizam as estratégias mais
+            sofisticadas de marketing digital, aplicando técnicas como
+            remarketing, para potencializar os resultados do nosso cliente.
+          </p>
+        </div>
+        <div class="faq-card">
+          <div class="faq-card-header">
+            <img
+              src="./assets/avatars/person_5.png"
+              class="faq-card-avatar"
+              alt=""
+            />
+            <h2 class="faq-card-title">Vocês criam sites e aplicativos?</h2>
+          </div>
+          <p class="faq-card-text">
+            Sim! Somos um time versátil, além de sites e aplicativos a Trilogika
+            também cria sistemas sob medida e outras soluções relacionadas a
+            tratamento de dados e hospedagem.
+          </p>
+        </div>
+        <div class="faq-card">
+          <div class="faq-card-header">
+            <img
+              src="./assets/avatars/person_6.png"
+              class="faq-card-avatar"
+              alt=""
+            />
+            <h2 class="faq-card-title">Vocês prestam consultoria?</h2>
+          </div>
+          <p class="faq-card-text">
+            Sim! Nossos programas de consultoria nas áreas de Marketing Digital
+            e Tecnologia tem como objetivo acessorar e orientar nossos clientes
+            sobre a melhor forma de alcançar os resultados desejados.
+          </p>
+        </div>
+        <div class="faq-card">
+          <div class="faq-card-header">
+            <img
+              src="./assets/avatars/person_7.png"
+              class="faq-card-avatar"
+              alt=""
+            />
+            <h2 class="faq-card-title">
+              E se minha empresa precisar de um parceiro?
+            </h2>
+          </div>
+          <p class="faq-card-text">
+            A Trilogika é uma empresa focada em produzir soluções e resultados e
+            estamos sempre abertos a parcerias. Se o seu negócio também possui
+            esses objetivos em comum, faça contato e vamos conversar a respeito.
+          </p>
+        </div>
+        <div class="faq-card">
+          <div class="faq-card-header">
+            <img
+              src="./assets/avatars/person_8.png"
+              class="faq-card-avatar"
+              alt=""
+            />
+            <h2 class="faq-card-title">
+              Que tipo de conteúdo pra mídias sociais vocês trabalham?
+            </h2>
+          </div>
+          <p class="faq-card-text">
+            O trabalho de gestão e produção de conteúdos para as mídias sociais
+            oferecidos pela Trilogika são em diversos formatos. Tudo isso de
+            acordo com a estratégia e escolha do cliente. Criamos formatos
+            estáticos, vídeos animados e narrados, vídeos institucionais, dentre
+            outros.
+          </p>
+        </div>
+        <div class="faq-card">
+          <div class="faq-card-header">
+            <img
+              src="./assets/avatars/person_9.png"
+              class="faq-card-avatar"
+              alt=""
+            />
+            <h2 class="faq-card-title">
+              Como funciona o serviço de melhoria de conteúdo?
+            </h2>
+          </div>
+          <p class="faq-card-text">
+            Para elevar a produção de conteúdo da sua marca, é preciso antes de
+            tudo, pensar de forma objetiva. Na Trilógica nós entendemos o seu
+            negócio para produzir conteúdos estratégicos que promovam maior
+            alcance para a sua marca com grande potencial de conversão.
+          </p>
+        </div>
+        <div class="faq-card">
+          <div class="faq-card-header">
+            <img
+              src="./assets/avatars/person_5.png"
+              class="faq-card-avatar"
+              alt=""
+            />
+            <h2 class="faq-card-title">
+              Quais metodologias de trabalho a Trilogika utiliza?
+            </h2>
+          </div>
+          <p class="faq-card-text">
+            Nossos times são versados em várias disciplinas que nos permitem ter
+            uma visão clara de objetivos e ao mesmo tempo mantendo foco em
+            resultados tangíveis. Trabalhamos com transparência e agilidade para
+            atender as mais diversas necessidades do seu negócio.
+          </p>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="brand-gradient text-white p-8">
-    <div id="about" class="container mx-auto">
-      <header class="text-center">
-        <h1 class="section-title">Nascemos pra gerar resultado</h1>
-        <p class="section-subtitle text-brand-50">
-          Já nascemos com o pé no digital, com soluções maduras e um time eficiente focado em gerar resultado.
-          As soluções estratégicas da Trilogika podem ajudar a modernizar e alavancar o seu negócio
-        </p>
-      </header>
-    </div>
-  </section>
-  <section id="faq" class="p-8 mb-12">
-    <header class="mb-16 text-center">
-      <h1 class="section-title">Perguntas frequentes</h1>
-      <p class="section-subtitle">Vejas os são os assuntos mais perguntados pelos nossos
-        clientes</p>
-    </header>
-    <div class="flex flex-wrap justify-center gap-6">
-      <div class="faq-card">
-        <div class="faq-card-header">
-          <img src="./assets/avatars/person_1.png" class="faq-card-avatar" alt="">
-          <h2 class="faq-card-title">Quais serviços a Trilogika oferece?</h2>
-        </div>
-        <p class="faq-card-text">
-          Atuamos em diversas frentes, como: Marketing Digital, Web Design, Identidade Visual, Criação de App Mobile,
-          Desenvolvimento de projetos WEB, Outsourcing, Gerenciamento de projetos Web
-        </p>
+    </section>
+    <footer class="container mx-auto border-t p-2">
+      <div class="flex items-center justify-between">
+        <img src="./assets/logo-vertical.svg" alt="logo" class="h-16 w-auto" />
+        <small class="text-muted"
+          >Copyright © 2022 Trilogika. Todos os direitos reservados.</small
+        >
+        <ul class="flex justify-between space-x-4 text-2xl">
+          <li>
+            <a href="#" class="link" title="Facebook" alt="Facebook"
+              ><i class="bi bi-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="link" title="Instagram" alt="Instagram"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="link" title="LinkedIn" alt="LinkedIn"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+          </li>
+        </ul>
       </div>
-      <div class="faq-card">
-        <div class="faq-card-header">
-          <img src="./assets/avatars/person_2.png" class="faq-card-avatar" alt="">
-          <h2 class="faq-card-title">Quanto custa para contratar a Trilogika?</h2>
-        </div>
-        <p class="faq-card-text">
-          Nossos custos dependem de uma análise de demanda específica, após o contato feito pelo cliente, realizamos uma
-          reunião para entender as necessidades e então formalizamos uma proposta comercial.
-        </p>
-      </div>
-      <div class="faq-card">
-        <div class="faq-card-header">
-          <img src="./assets/avatars/person_3.png" class="faq-card-avatar" alt="">
-          <h2 class="faq-card-title">Como faço para obter um orçamento?</h2>
-        </div>
-        <p class="faq-card-text">
-          Faça contato pelo nosso botão do Whatsapp ou envie um email para
-          <a href="mailto:contato@trilogika.com.br" class="text-brand-500">contato@trilogika.com.br</a> que teremos uma
-          grande
-          satisfação em
-          atendê-lo!
-        </p>
-      </div>
-      <div class="faq-card">
-        <div class="faq-card-header">
-          <img src="./assets/avatars/person_4.png" class="faq-card-avatar" alt="">
-          <h2 class="faq-card-title">Vocês fazem tráfego pago?</h2>
-        </div>
-        <p class="faq-card-text">
-          Sim! Nossas campanhas de tráfego pago utilizam as estratégias mais sofisticadas de marketing digital,
-          aplicando técnicas como remarketing, para potencializar os resultados do nosso cliente.
-        </p>
-      </div>
-      <div class="faq-card">
-        <div class="faq-card-header">
-          <img src="./assets/avatars/person_5.png" class="faq-card-avatar" alt="">
-          <h2 class="faq-card-title">Vocês criam sites e aplicativos?</h2>
-        </div>
-        <p class="faq-card-text">
-          Sim! Somos um time versátil, além de sites e aplicativos a Trilogika também
-          cria sistemas sob medida e outras soluções relacionadas a tratamento de dados e hospedagem.
-        </p>
-      </div>
-      <div class="faq-card">
-        <div class="faq-card-header">
-          <img src="./assets/avatars/person_6.png" class="faq-card-avatar" alt="">
-          <h2 class="faq-card-title">Vocês prestam consultoria?</h2>
-        </div>
-        <p class="faq-card-text">
-          Sim! Nossos programas de consultoria nas áreas de Marketing Digital e Tecnologia tem como objetivo acessorar e
-          orientar nossos clientes sobre a melhor forma de alcançar os resultados desejados.
-        </p>
-      </div>
-      <div class="faq-card">
-        <div class="faq-card-header">
-          <img src="./assets/avatars/person_7.png" class="faq-card-avatar" alt="">
-          <h2 class="faq-card-title">E se minha empresa precisar de um parceiro?</h2>
-        </div>
-        <p class="faq-card-text">
-          A Trilogika é uma empresa focada em produzir soluções e resultados e estamos sempre abertos a parcerias.
-          Se o seu negócio também possui esses objetivos em comum, faça contato e vamos conversar a respeito.
-        </p>
-      </div>
-      <div class="faq-card">
-        <div class="faq-card-header">
-          <img src="./assets/avatars/person_8.png" class="faq-card-avatar" alt="">
-          <h2 class="faq-card-title">Que tipo de conteúdo pra mídias sociais vocês trabalham?</h2>
-        </div>
-        <p class="faq-card-text">O trabalho de gestão e produção de conteúdos para as mídias sociais oferecidos pela
-          Trilogika são em diversos formatos. Tudo isso de acordo com a estratégia e escolha do cliente. Criamos
-          formatos estáticos, vídeos animados e narrados, vídeos institucionais, dentre outros.</p>
-      </div>
-      <div class="faq-card">
-        <div class="faq-card-header">
-          <img src="./assets/avatars/person_9.png" class="faq-card-avatar" alt="">
-          <h2 class="faq-card-title">Como funciona o serviço de melhoria de conteúdo?</h2>
-        </div>
-        <p class="faq-card-text">
-          Para elevar a produção de conteúdo da sua marca, é preciso antes de tudo, pensar de forma objetiva. Na
-          Trilógica nós entendemos o seu negócio para produzir conteúdos estratégicos que promovam maior alcance para a
-          sua marca com grande potencial de conversão.
-        </p>
-      </div>
-      <div class="faq-card">
-        <div class="faq-card-header">
-          <img src="./assets/avatars/person_5.png" class="faq-card-avatar" alt="">
-          <h2 class="faq-card-title">Quais metodologias de trabalho a Trilogika utiliza?</h2>
-        </div>
-        <p class="faq-card-text">
-          Nossos times são versados em várias disciplinas que nos permitem ter uma visão clara de objetivos e ao mesmo
-          tempo mantendo
-          foco em resultados tangíveis. Trabalhamos com transparência e agilidade para atender as mais diversas
-          necessidades do seu negócio.
-        </p>
-      </div>
-    </div>
-  </section>
-  <footer class="container mx-auto p-2 border-t">
-    <div class="flex items-center justify-between">
-      <img src="./assets/logo-vertical.svg" alt="logo" class="h-16 w-auto">
-      <small class="text-muted">Copyright © 2022 Trilogika. Todos os direitos reservados.</small>
-      <ul class="flex justify-between space-x-4 text-2xl">
-        <li><a href="#" class="link" title="Facebook" alt="Facebook"><i class="bi bi-facebook"></i></a></li>
-        <li><a href="#" class="link" title="Instagram" alt="Instagram"><i class="bi bi-instagram"></i></a></li>
-        <li><a href="#" class="link" title="LinkedIn" alt="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
-      </ul>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

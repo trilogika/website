@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
   }
 }
@@ -14,11 +14,11 @@
 }
 
 .gray-reveal {
-  @apply grayscale hover:grayscale-0 hover:-translate-y-1 hover:translate-x-1 hover:scale-110 transform-gpu transition-all duration-500;
+  @apply transform-gpu grayscale transition-all duration-500 hover:-translate-y-1 hover:translate-x-1 hover:scale-110 hover:grayscale-0;
 }
 
 .circle-icon-gradient {
-  @apply h-20 w-20 text-4xl rounded-full flex items-center content-center justify-center bg-gradient-to-br from-brand-500 to-indigo-600;
+  @apply flex h-20 w-20 content-center items-center justify-center rounded-full bg-gradient-to-br from-brand-500 to-indigo-600 text-4xl;
 }
 
 .brand-gradient {
@@ -30,19 +30,19 @@
 }
 
 .btn {
-  @apply rounded-lg cursor-pointer font-semibold px-5 py-2.5 ease-in-out duration-300;
+  @apply cursor-pointer rounded-lg px-5 py-2.5 font-semibold duration-300 ease-in-out;
 }
 
 .btn-brand {
-  @apply inline-flex items-center bg-brand-500 hover:bg-brand-600 text-white;
+  @apply inline-flex items-center bg-brand-500 text-white hover:bg-brand-600;
 }
 
 .btn-whatsapp {
-  @apply inline-flex items-center bg-[#25D366] hover:bg-[#128C7E] text-white hover:text-white;
+  @apply inline-flex items-center bg-[#25D366] text-white hover:bg-[#128C7E] hover:text-white;
 }
 
 .section-title {
-  @apply text-4xl font-medium mb-2;
+  @apply mb-2 text-4xl font-medium;
 }
 
 .section-subtitle {
@@ -54,15 +54,15 @@
 }
 
 .faq-card {
-  @apply bg-slate-50 text-black rounded-xl p-4 flex flex-col md:max-w-[350px] shadow border border-transparent hover:border hover:border-brand-500;
+  @apply flex flex-col rounded-xl border border-transparent bg-slate-50 p-4 text-black shadow hover:border hover:border-brand-500 md:max-w-[350px];
 }
 
 .faq-card-header {
-  @apply flex mb-2 items-center;
+  @apply mb-2 flex items-center;
 }
 
 .faq-card-avatar {
-  @apply h-12 w-12 rounded-full mr-4;
+  @apply mr-4 h-12 w-12 rounded-full;
 }
 
 .faq-card-title {
@@ -70,5 +70,5 @@
 }
 
 .faq-card-text {
-  @apply text-slate-600 font-normal;
+  @apply font-normal text-slate-600;
 }
