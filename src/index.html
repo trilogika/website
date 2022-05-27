@@ -7,6 +7,7 @@
     <title>Trilogika</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -15,31 +16,28 @@
   </head>
 
   <body class="subpixel-antialiased">
+    <a
+      href="https://api.whatsapp.com/send?phone=5527998855518&text=Ol%C3%A1!%20Quero%20conhecer%20a%20Trilogika."
+      class="btn-circle btn-whatsapp"
+    >
+      <i class="bi bi-whatsapp text-xl"></i>
+    </a>
     <span class="brand-gradient block h-1 w-full"></span>
     <section class="mb-12">
       <div class="container mx-auto">
-        <nav
-          class="flex flex-wrap items-center justify-between p-4 font-medium"
-        >
+        <nav class="flex flex-wrap items-center p-4 font-medium">
           <img src="./assets/logo.svg" alt="" class="h-[45px] lg:w-auto" />
-          <div class="hidden items-center space-x-4 md:flex">
+          <div class="hidden items-center space-x-4 md:ml-12 md:flex">
             <a href="#about" class="link">Sobre</a>
             <a href="#tools" class="link">Ferramentas</a>
             <a href="#products" class="link">Produtos</a>
-            <a
-              href="https://web.whatsapp.com/send?phone=5527992297061&text=Ol%C3%A1!%20Quero%20conhecer%20a%20Trilogika."
-              class="btn btn-whatsapp"
-            >
-              <i class="bi bi-whatsapp mr-1"></i>
-              Vamos conversar?
-            </a>
           </div>
         </nav>
         <figure class="flex items-center pt-20">
           <figcaption
             class="flex flex-col items-center justify-between lg:w-1/2 lg:items-start"
           >
-            <h1 class="mb-6 text-5xl font-semibold lg:text-6xl">
+            <h1 class="mb-6 break-all text-5xl font-semibold lg:text-6xl">
               Engajamento e transformação digital.
             </h1>
             <p class="text-2xl font-light">
@@ -69,7 +67,7 @@
         <div class="flex flex-wrap justify-around gap-6">
           <div class="flex w-full justify-center md:w-auto md:min-w-min">
             <img
-              src="./assets/tools/googleads.png"
+              src="./assets/tools/gads.png"
               alt="googleads"
               class="gray-reveal"
             />
@@ -377,30 +375,51 @@
         </div>
       </div>
     </section>
-    <footer class="container mx-auto border-t p-2">
+    <footer class="border-t p-4">
       <div class="flex items-center justify-between">
         <img src="./assets/logo-vertical.svg" alt="logo" class="h-16 w-auto" />
-        <small class="text-muted"
-          >Copyright © 2022 Trilogika. Todos os direitos reservados.</small
-        >
         <ul class="flex justify-between space-x-4 text-2xl">
           <li>
-            <a href="#" class="link" title="Facebook" alt="Facebook"
+            <a
+              href="tel:+5527998855518"
+              class="link"
+              title="Telefone"
+              alt="Telefone"
+              ><i class="bi bi-telephone-fill"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/trilogika.oficial"
+              class="link"
+              title="Facebook"
+              alt="Facebook"
               ><i class="bi bi-facebook"></i
             ></a>
           </li>
           <li>
-            <a href="#" class="link" title="Instagram" alt="Instagram"
+            <a
+              href="https://www.instagram.com/trilogika.oficial"
+              class="link"
+              title="Instagram"
+              alt="Instagram"
               ><i class="bi bi-instagram"></i
             ></a>
           </li>
           <li>
-            <a href="#" class="link" title="LinkedIn" alt="LinkedIn"
+            <a
+              href="https://pt.linkedin.com/company/trilogika"
+              class="link"
+              title="LinkedIn"
+              alt="LinkedIn"
               ><i class="bi bi-linkedin"></i
             ></a>
           </li>
         </ul>
       </div>
+      <small class="text-muted mt-4 block text-center">
+        Copyright © 2022 Trilogika. Todos os direitos reservados.
+      </small>
     </footer>
   </body>
 </html>

@@ -33,12 +33,16 @@
   @apply cursor-pointer rounded-lg px-5 py-2.5 font-semibold duration-300 ease-in-out;
 }
 
+.btn-circle {
+  @apply h-14 w-14 cursor-pointer rounded-full font-semibold duration-300 ease-in-out;
+}
+
 .btn-brand {
   @apply inline-flex items-center bg-brand-500 text-white hover:bg-brand-600;
 }
 
 .btn-whatsapp {
-  @apply inline-flex items-center bg-[#25D366] text-white hover:bg-[#128C7E] hover:text-white;
+  @apply fixed top-0 right-0 z-50 m-4 flex items-center justify-center bg-[#25D366] text-white shadow-lg hover:bg-[#128C7E] hover:text-white;
 }
 
 .section-title {
